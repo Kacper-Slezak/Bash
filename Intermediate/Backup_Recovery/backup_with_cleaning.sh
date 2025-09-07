@@ -8,5 +8,5 @@ backup="$dest/backup-$(date +%Y-%m-%d).tar.gz"
 tar -czf "$backup" "$src"
 
 find "$dest" -type f -mtime +7 -delete
-echo "Backup zapisany w: ${backup}"
+echo "Backup saved in: ${backup}"
 
